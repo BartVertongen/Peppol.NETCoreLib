@@ -1,6 +1,6 @@
 ﻿
 using System;
-using VertSoft.SBDH;
+using VertSoft.Peppol.Sbdh;
 
 
 namespace VertSoft.SBDHWrapper

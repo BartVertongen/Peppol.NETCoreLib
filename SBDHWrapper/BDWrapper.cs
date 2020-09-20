@@ -5,7 +5,6 @@ using System.IO;
 using System.Xml.Linq;
 using System.Xml;
 using VertSoft.Peppol.Common.Model;
-using VertSoft.SBDH;
 
 
 namespace VertSoft.Peppol.Sbdh

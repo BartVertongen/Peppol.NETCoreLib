@@ -12,7 +12,7 @@ using VertSoft.Peppol.Icd.Api;
 using VertSoft.Peppol.Icd.Code;
 
 
-namespace VertSoft.SBDH
+namespace VertSoft.Peppol.Sbdh
 {
 	/// <summary>
 	/// Business Document Helper for any UBL document
