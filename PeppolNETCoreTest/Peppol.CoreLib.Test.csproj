@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Bart Vertongen</Authors>
+    <Company>VertSoft</Company>
+    <NoWin32Manifest>true</NoWin32Manifest>
+	  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants></DefineConstants>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Certvalidator\**" />
+    <Compile Remove="Common\api\**" />
+    <EmbeddedResource Remove="Certvalidator\**" />
+    <EmbeddedResource Remove="Common\api\**" />
+    <None Remove="Certvalidator\**" />
+    <None Remove="Common\api\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Common\model\ParticipantIdentifier.cs" />
+    <Compile Remove="Evidence\rem\EvidenceCombinedTest.cs" />
+    <Compile Remove="Evidence\rem\EvidenceReaderTest.cs" />
+    <Compile Remove="Evidence\rem\EvidenceTest.cs" />
+    <Compile Remove="Evidence\rem\EvidenceTypeInstanceTest.cs" />
+    <Compile Remove="Evidence\rem\EvidenceWriterTest.cs" />
+    <Compile Remove="Evidence\rem\ParseRemTest.cs" />
+    <Compile Remove="Evidence\rem\RemEvidenceBuilderTest.cs" />
+    <Compile Remove="Evidence\rem\RemEvidenceServiceTest.cs" />
+    <Compile Remove="Evidence\rem\RemEvidenceTransformerTest.cs" />
+    <Compile Remove="Evidence\rem\RemHelperTest.cs" />
+    <Compile Remove="Evidence\rem\SignedEvidenceCombinedTest.cs" />
+    <Compile Remove="Evidence\rem\SignedEvidenceReaderTest.cs" />
+    <Compile Remove="Evidence\rem\SignedEvidenceWriterTest.cs" />
+    <Compile Remove="Evidence\rem\TestResources.cs" />
+    <Compile Remove="Evidence\rem\TestResourcesTest.cs" />
+    <Compile Remove="Lookup\locator\BdxlLocator.cs" />
+    <Compile Remove="Lookup\locator\BdxlLocatorTest.cs" />
+    <Compile Remove="Lookup\LookupClientBuilderTest.cs" />
+    <Compile Remove="Lookup\LookupClientTest.cs" />
+    <Compile Remove="Lookup\reader\MultiReader.cs" />
+    <Compile Remove="Lookup\util\XmlUtilsTest.cs" />
+    <Compile Remove="Sbdh\util\XMLStreamUtilsTest.cs" />
+    <Compile Remove="Security\ModeDetectorTest.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Sbdh\util\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.7.1" />
+    <PackageReference Include="System.Security.Cryptography.Pkcs" Version="4.7.0" />
+    <PackageReference Include="System.Security.Cryptography.Xml" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Peppol.NETCoreLib\Peppol.CoreLib.csproj" />
+  </ItemGroup>
+
+</Project>

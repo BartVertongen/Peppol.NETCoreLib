@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SBDHWrapper1": {
+      "commandName": "Project",
+      "commandLineArgs": "InvoicePeppol4A2.xml"
+    }
+  }
+}

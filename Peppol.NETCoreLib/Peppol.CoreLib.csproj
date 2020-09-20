@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="certvalidator\**" />
+    <Compile Remove="common\XSD\**" />
+    <EmbeddedResource Remove="certvalidator\**" />
+    <EmbeddedResource Remove="common\XSD\**" />
+    <None Remove="certvalidator\**" />
+    <None Remove="common\XSD\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="common\util\ExceptionUtil.cs" />
+    <Compile Remove="evidence\rem\Evidence.cs" />
+    <Compile Remove="evidence\rem\EvidenceReader.cs" />
+    <Compile Remove="evidence\rem\EvidenceTypeInstance.cs" />
+    <Compile Remove="evidence\rem\EvidenceWriter.cs" />
+    <Compile Remove="evidence\rem\RemEvidenceBuilder.cs" />
+    <Compile Remove="evidence\rem\RemEvidenceService.cs" />
+    <Compile Remove="evidence\rem\RemEvidenceTransformer.cs" />
+    <Compile Remove="evidence\rem\RemHelper.cs" />
+    <Compile Remove="evidence\rem\SignedEvidenceReader.cs" />
+    <Compile Remove="evidence\rem\SignedEvidenceWriter.cs" />
+    <Compile Remove="evidence\rem\SignedRemEvidence.cs" />
+    <Compile Remove="lookup\fetcher\AbstractFetcher.cs" />
+    <Compile Remove="lookup\fetcher\BasicApacheFetcher.cs" />
+    <Compile Remove="lookup\fetcher\UrlFetcher.cs" />
+    <Compile Remove="lookup\locator\BdxlLocator.cs" />
+    <Compile Remove="lookup\LookupClient.cs" />
+    <Compile Remove="lookup\LookupClientBuilder.cs" />
+    <Compile Remove="mode\Mode.cs" />
+    <Compile Remove="security\ModeDetector.cs" />
+    <Compile Remove="types\smp_1\xmldsig.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="publisher\pom.xml" />
+    <None Remove="security\resources\truststore\peppol-production-ap.jks" />
+    <None Remove="security\resources\truststore\peppol-production-smp.jks" />
+    <None Remove="security\resources\truststore\peppol-test-ap.jks" />
+    <None Remove="security\resources\truststore\peppol-test-smp.jks" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="mode\" />
+    <Folder Include="sbdh\Info\" />
+    <Folder Include="sbdh\xsd\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.7.1" />
+    <PackageReference Include="System.Security.Cryptography.Pkcs" Version="4.7.0" />
+    <PackageReference Include="System.Security.Cryptography.Xml" Version="4.7.0" />
+  </ItemGroup>
+
+</Project>

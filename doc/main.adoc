@@ -1,0 +1,23 @@
+:version: 4.0.2
+:techversion: 4.0.2
+
+= Oxalis
+v{version}
+:doctype: book
+:icons: font
+:toc: left
+:toclevels: 2
+:source-highlighter: coderay
+:source-language: xml
+:sectanchors:
+:sectnums:
+
+:leveloffset: +1
+
+include::introduction.adoc[]
+
+include::install.adoc[]
+
+include::configuration.adoc[]
+
+include::customizing.adoc[]

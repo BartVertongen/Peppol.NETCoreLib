@@ -1,0 +1,39 @@
+#ignore gimp files
+*.xcf
+
+#ignore the folder with PDFs
+Knowledge/
+Android/
+./LuckyRoomsrazor/bin/
+./LuckyRoomsMVC/obj
+./LuckyRoomsMVC/bin
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+#ignore typical Visual Studio files
+.vs/
+.git
+*.dll
+*.pdb
+*.ldf
+
+
+# Build results
+SAXNETLib/obj
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
